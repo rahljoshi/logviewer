@@ -1,0 +1,86 @@
+.shell {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  background: rgba(255, 253, 248, 0.82);
+  box-shadow: 0 24px 60px rgba(31, 26, 20, 0.1);
+}
+
+.summary {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.label {
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.total {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 0.92;
+}
+
+.levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.levelPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--surface-2);
+}
+
+.active {
+  box-shadow: 0 0 0 2px rgba(31, 26, 20, 0.14);
+}
+
+.error {
+  color: var(--level-error);
+}
+
+.warn {
+  color: var(--level-warn);
+}
+
+.info {
+  color: var(--level-info);
+}
+
+.debug {
+  color: var(--level-debug);
+}
+
+.unknown {
+  color: var(--level-unknown);
+}
+
+.clearButton {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.clearIcon {
+  width: 1rem;
+  height: 1rem;
+}

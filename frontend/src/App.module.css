@@ -1,0 +1,41 @@
+.appShell {
+  min-height: 100vh;
+  display: grid;
+  gap: 2rem;
+  padding: 3rem clamp(1.25rem, 3vw, 3rem);
+  background:
+    radial-gradient(circle at top left, rgba(55, 138, 221, 0.16), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(226, 75, 74, 0.14), transparent 28%),
+    linear-gradient(180deg, #f5f1e8 0%, #ece7dd 100%);
+}
+
+.hero {
+  max-width: 52rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.title {
+  max-width: 12ch;
+  font-size: clamp(2.8rem, 6vw, 5.4rem);
+  line-height: 0.92;
+}
+
+.subtitle {
+  max-width: 40rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.panel {
+  width: min(100%, 64rem);
+}
