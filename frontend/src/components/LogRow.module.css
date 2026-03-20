@@ -1,0 +1,84 @@
+.row {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10rem 7rem minmax(0, 1fr) 10rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-bottom: 1px solid rgba(31, 26, 20, 0.08);
+  background: transparent;
+  text-align: left;
+}
+
+.row:hover {
+  background: rgba(55, 138, 221, 0.06);
+}
+
+.selected {
+  background: rgba(55, 138, 221, 0.1);
+}
+
+.timestamp,
+.source {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.level {
+  justify-self: start;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.error {
+  background: rgba(226, 75, 74, 0.14);
+  color: var(--level-error);
+}
+
+.warn {
+  background: rgba(239, 159, 39, 0.16);
+  color: #8f5b00;
+}
+
+.info {
+  background: rgba(55, 138, 221, 0.12);
+  color: var(--level-info);
+}
+
+.debug {
+  background: rgba(136, 135, 128, 0.15);
+  color: var(--level-debug);
+}
+
+.unknown {
+  background: rgba(180, 178, 169, 0.2);
+  color: var(--level-unknown);
+}
+
+.message {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.message mark {
+  padding: 0.05rem 0.15rem;
+  border-radius: 0.2rem;
+  background: rgba(239, 159, 39, 0.28);
+}
+
+@media (max-width: 960px) {
+  .row {
+    grid-template-columns: 8rem 6rem minmax(0, 1fr);
+  }
+
+  .source {
+    display: none;
+  }
+}

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "node src/utils/format.test.js"
+    "test": "node src/utils/format.test.js && node src/utils/highlightParts.test.js"
   },
   "dependencies": {
     "@tanstack/react-virtual": "^3.13.12",
