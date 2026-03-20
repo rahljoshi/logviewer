@@ -1,6 +1,5 @@
 import { Trash2 } from 'lucide-react'
 
-import { clearLogs } from '../api/client.js'
 import styles from './StatsBar.module.css'
 
 const LEVEL_ORDER = ['ERROR', 'WARN', 'INFO', 'DEBUG']
@@ -21,11 +20,6 @@ function levelClassName(level) {
 }
 
 function StatsBar({ stats, onLevelFilter, activeLevel, onClear }) {
-  async function handleClear() {
-    await clearLogs()
-    onClear()
-  }
-
   return (
     <div className={styles.shell}>
       <div className={styles.summary}>
@@ -51,7 +45,7 @@ function StatsBar({ stats, onLevelFilter, activeLevel, onClear }) {
         })}
       </div>
 
-      <button className={styles.clearButton} onClick={handleClear} type="button">
+      <button className={styles.clearButton} onClick={onClear} type="button">
         <Trash2 className={styles.clearIcon} />
         Clear / Upload new
       </button>

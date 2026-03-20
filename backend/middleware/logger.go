@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"time"
@@ -26,6 +27,18 @@ func Logger(next http.Handler) http.Handler {
 
 		next.ServeHTTP(recorder, r)
 
-		log.Printf("%s %s -> %d in %s", r.Method, r.URL.Path, recorder.status, time.Since(start).Round(time.Millisecond))
+		duration := time.Since(start).Round(time.Millisecond)
+		if duration < time.Millisecond {
+			duration = time.Millisecond
+		}
+
+		log.Printf(
+			"%s  %-6s  %-20s  %3d  %s",
+			start.UTC().Format(time.RFC3339),
+			r.Method,
+			r.URL.Path,
+			recorder.status,
+			fmt.Sprintf("%dms", duration/time.Millisecond),
+		)
 	})
 }

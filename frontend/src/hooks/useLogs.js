@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { fetchLogs } from '../api/client.js'
+import { clearLogs, fetchLogs } from '../api/client.js'
 
 export default function useLogs() {
   const [filter, setFilterState] = useState({
@@ -57,7 +57,20 @@ export default function useLogs() {
     }))
   }
 
+  async function clear() {
+    try {
+      await clearLogs()
+      setEntries([])
+      setTotal(0)
+      setError(null)
+    } catch (err) {
+      setError(err.message)
+      throw err
+    }
+  }
+
   return {
+    clear,
     entries,
     total,
     loading,

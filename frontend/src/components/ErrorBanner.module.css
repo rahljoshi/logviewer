@@ -1,0 +1,29 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(226, 75, 74, 0.28);
+  border-radius: 1rem;
+  background: rgba(226, 75, 74, 0.12);
+  color: #7a1917;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.icon,
+.dismissIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.dismiss {
+  border: none;
+  background: transparent;
+  color: inherit;
+}
