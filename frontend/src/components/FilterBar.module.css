@@ -1,0 +1,57 @@
+.shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 12rem auto;
+  gap: 0.85rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 1.2rem;
+  background: rgba(255, 253, 248, 0.8);
+}
+
+.searchField {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 0.95rem;
+  border-radius: 0.95rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.searchField input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.searchIcon {
+  width: 1rem;
+  height: 1rem;
+  color: var(--text-muted);
+}
+
+.levelSelect,
+.clearButton {
+  padding: 0.8rem 0.95rem;
+  border-radius: 0.95rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.clearButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clearIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (max-width: 720px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+}
