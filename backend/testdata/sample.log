@@ -1,0 +1,200 @@
+{"timestamp":"2026-03-21T10:00:00Z","level":"info","message":"user login successful","service":"api","request_id":"req-0001","duration_ms":90}
+{"timestamp":"2026-03-21T10:00:36Z","level":"warn","message":"database query slow","service":"worker","request_id":"req-0002","duration_ms":125}
+{"timestamp":"2026-03-21T10:01:12Z","level":"error","message":"cache miss for key alpha","service":"billing","request_id":"req-0003","duration_ms":160}
+{"timestamp":"2026-03-21T10:01:48Z","level":"debug","message":"request timed out","service":"edge","request_id":"req-0004","duration_ms":195}
+{"timestamp":"2026-03-21T10:02:24Z","level":"info","message":"worker picked up job","service":"api","request_id":"req-0005","duration_ms":230}
+{"timestamp":"2026-03-21T10:03:00Z","level":"warn","message":"session refresh completed","service":"worker","request_id":"req-0006","duration_ms":265}
+{"timestamp":"2026-03-21T10:03:36Z","level":"error","message":"email delivery queued","service":"billing","request_id":"req-0007","duration_ms":300}
+{"timestamp":"2026-03-21T10:04:12Z","level":"debug","message":"disk usage warning threshold reached","service":"edge","request_id":"req-0008","duration_ms":90}
+{"timestamp":"2026-03-21T10:04:48Z","level":"info","message":"user login successful","service":"api","request_id":"req-0009","duration_ms":125}
+{"timestamp":"2026-03-21T10:05:24Z","level":"warn","message":"database query slow","service":"worker","request_id":"req-0010","duration_ms":160}
+{"timestamp":"2026-03-21T10:06:00Z","level":"error","message":"cache miss for key alpha","service":"billing","request_id":"req-0011","duration_ms":195}
+{"timestamp":"2026-03-21T10:06:36Z","level":"debug","message":"request timed out","service":"edge","request_id":"req-0012","duration_ms":230}
+{"timestamp":"2026-03-21T10:07:12Z","level":"info","message":"worker picked up job","service":"api","request_id":"req-0013","duration_ms":265}
+{"timestamp":"2026-03-21T10:07:48Z","level":"warn","message":"session refresh completed","service":"worker","request_id":"req-0014","duration_ms":300}
+{"timestamp":"2026-03-21T10:08:24Z","level":"error","message":"email delivery queued","service":"billing","request_id":"req-0015","duration_ms":90}
+{"timestamp":"2026-03-21T10:09:00Z","level":"debug","message":"disk usage warning threshold reached","service":"edge","request_id":"req-0016","duration_ms":125}
+{"timestamp":"2026-03-21T10:09:36Z","level":"info","message":"user login successful","service":"api","request_id":"req-0017","duration_ms":160}
+{"timestamp":"2026-03-21T10:10:12Z","level":"warn","message":"database query slow","service":"worker","request_id":"req-0018","duration_ms":195}
+{"timestamp":"2026-03-21T10:10:48Z","level":"error","message":"cache miss for key alpha","service":"billing","request_id":"req-0019","duration_ms":230}
+{"timestamp":"2026-03-21T10:11:24Z","level":"debug","message":"request timed out","service":"edge","request_id":"req-0020","duration_ms":265}
+{"timestamp":"2026-03-21T10:12:00Z","level":"info","message":"worker picked up job","service":"api","request_id":"req-0021","duration_ms":300}
+{"timestamp":"2026-03-21T10:12:36Z","level":"warn","message":"session refresh completed","service":"worker","request_id":"req-0022","duration_ms":90}
+{"timestamp":"2026-03-21T10:13:12Z","level":"error","message":"email delivery queued","service":"billing","request_id":"req-0023","duration_ms":125}
+{"timestamp":"2026-03-21T10:13:48Z","level":"debug","message":"disk usage warning threshold reached","service":"edge","request_id":"req-0024","duration_ms":160}
+{"timestamp":"2026-03-21T10:14:24Z","level":"info","message":"user login successful","service":"api","request_id":"req-0025","duration_ms":195}
+{"timestamp":"2026-03-21T10:15:00Z","level":"warn","message":"database query slow","service":"worker","request_id":"req-0026","duration_ms":230}
+{"timestamp":"2026-03-21T10:15:36Z","level":"error","message":"cache miss for key alpha","service":"billing","request_id":"req-0027","duration_ms":265}
+{"timestamp":"2026-03-21T10:16:12Z","level":"debug","message":"request timed out","service":"edge","request_id":"req-0028","duration_ms":300}
+{"timestamp":"2026-03-21T10:16:48Z","level":"info","message":"worker picked up job","service":"api","request_id":"req-0029","duration_ms":90}
+{"timestamp":"2026-03-21T10:17:24Z","level":"warn","message":"session refresh completed","service":"worker","request_id":"req-0030","duration_ms":125}
+{"timestamp":"2026-03-21T10:18:00Z","level":"error","message":"email delivery queued","service":"billing","request_id":"req-0031","duration_ms":160}
+{"timestamp":"2026-03-21T10:18:36Z","level":"debug","message":"disk usage warning threshold reached","service":"edge","request_id":"req-0032","duration_ms":195}
+{"timestamp":"2026-03-21T10:19:12Z","level":"info","message":"user login successful","service":"api","request_id":"req-0033","duration_ms":230}
+{"timestamp":"2026-03-21T10:19:48Z","level":"warn","message":"database query slow","service":"worker","request_id":"req-0034","duration_ms":265}
+{"timestamp":"2026-03-21T10:20:24Z","level":"error","message":"cache miss for key alpha","service":"billing","request_id":"req-0035","duration_ms":300}
+{"timestamp":"2026-03-21T10:21:00Z","level":"debug","message":"request timed out","service":"edge","request_id":"req-0036","duration_ms":90}
+{"timestamp":"2026-03-21T10:21:36Z","level":"info","message":"worker picked up job","service":"api","request_id":"req-0037","duration_ms":125}
+{"timestamp":"2026-03-21T10:22:12Z","level":"warn","message":"session refresh completed","service":"worker","request_id":"req-0038","duration_ms":160}
+{"timestamp":"2026-03-21T10:22:48Z","level":"error","message":"email delivery queued","service":"billing","request_id":"req-0039","duration_ms":195}
+{"timestamp":"2026-03-21T10:23:24Z","level":"debug","message":"disk usage warning threshold reached","service":"edge","request_id":"req-0040","duration_ms":230}
+{"timestamp":"2026-03-21T10:24:00Z","level":"info","message":"user login successful","service":"api","request_id":"req-0041","duration_ms":265}
+{"timestamp":"2026-03-21T10:24:36Z","level":"warn","message":"database query slow","service":"worker","request_id":"req-0042","duration_ms":300}
+{"timestamp":"2026-03-21T10:25:12Z","level":"error","message":"cache miss for key alpha","service":"billing","request_id":"req-0043","duration_ms":90}
+{"timestamp":"2026-03-21T10:25:48Z","level":"debug","message":"request timed out","service":"edge","request_id":"req-0044","duration_ms":125}
+{"timestamp":"2026-03-21T10:26:24Z","level":"info","message":"worker picked up job","service":"api","request_id":"req-0045","duration_ms":160}
+{"timestamp":"2026-03-21T10:27:00Z","level":"warn","message":"session refresh completed","service":"worker","request_id":"req-0046","duration_ms":195}
+{"timestamp":"2026-03-21T10:27:36Z","level":"error","message":"email delivery queued","service":"billing","request_id":"req-0047","duration_ms":230}
+{"timestamp":"2026-03-21T10:28:12Z","level":"debug","message":"disk usage warning threshold reached","service":"edge","request_id":"req-0048","duration_ms":265}
+{"timestamp":"2026-03-21T10:28:48Z","level":"info","message":"user login successful","service":"api","request_id":"req-0049","duration_ms":300}
+{"timestamp":"2026-03-21T10:29:24Z","level":"warn","message":"database query slow","service":"worker","request_id":"req-0050","duration_ms":90}
+{"timestamp":"2026-03-21T10:30:00Z","level":"error","message":"cache miss for key alpha","service":"billing","request_id":"req-0051","duration_ms":125}
+{"timestamp":"2026-03-21T10:30:36Z","level":"debug","message":"request timed out","service":"edge","request_id":"req-0052","duration_ms":160}
+{"timestamp":"2026-03-21T10:31:12Z","level":"info","message":"worker picked up job","service":"api","request_id":"req-0053","duration_ms":195}
+{"timestamp":"2026-03-21T10:31:48Z","level":"warn","message":"session refresh completed","service":"worker","request_id":"req-0054","duration_ms":230}
+{"timestamp":"2026-03-21T10:32:24Z","level":"error","message":"email delivery queued","service":"billing","request_id":"req-0055","duration_ms":265}
+{"timestamp":"2026-03-21T10:33:00Z","level":"debug","message":"disk usage warning threshold reached","service":"edge","request_id":"req-0056","duration_ms":300}
+{"timestamp":"2026-03-21T10:33:36Z","level":"info","message":"user login successful","service":"api","request_id":"req-0057","duration_ms":90}
+{"timestamp":"2026-03-21T10:34:12Z","level":"warn","message":"database query slow","service":"worker","request_id":"req-0058","duration_ms":125}
+{"timestamp":"2026-03-21T10:34:48Z","level":"error","message":"cache miss for key alpha","service":"billing","request_id":"req-0059","duration_ms":160}
+{"timestamp":"2026-03-21T10:35:24Z","level":"debug","message":"request timed out","service":"edge","request_id":"req-0060","duration_ms":195}
+{"timestamp":"2026-03-21T10:36:00Z","level":"info","message":"worker picked up job","service":"api","request_id":"req-0061","duration_ms":230}
+{"timestamp":"2026-03-21T10:36:36Z","level":"warn","message":"session refresh completed","service":"worker","request_id":"req-0062","duration_ms":265}
+{"timestamp":"2026-03-21T10:37:12Z","level":"error","message":"email delivery queued","service":"billing","request_id":"req-0063","duration_ms":300}
+{"timestamp":"2026-03-21T10:37:48Z","level":"debug","message":"disk usage warning threshold reached","service":"edge","request_id":"req-0064","duration_ms":90}
+{"timestamp":"2026-03-21T10:38:24Z","level":"info","message":"user login successful","service":"api","request_id":"req-0065","duration_ms":125}
+{"timestamp":"2026-03-21T10:39:00Z","level":"warn","message":"database query slow","service":"worker","request_id":"req-0066","duration_ms":160}
+{"timestamp":"2026-03-21T10:39:36Z","level":"error","message":"cache miss for key alpha","service":"billing","request_id":"req-0067","duration_ms":195}
+{"timestamp":"2026-03-21T10:40:12Z","level":"debug","message":"request timed out","service":"edge","request_id":"req-0068","duration_ms":230}
+{"timestamp":"2026-03-21T10:40:48Z","level":"info","message":"worker picked up job","service":"api","request_id":"req-0069","duration_ms":265}
+{"timestamp":"2026-03-21T10:41:24Z","level":"warn","message":"session refresh completed","service":"worker","request_id":"req-0070","duration_ms":300}
+{"timestamp":"2026-03-21T10:42:00Z","level":"error","message":"email delivery queued","service":"billing","request_id":"req-0071","duration_ms":90}
+{"timestamp":"2026-03-21T10:42:36Z","level":"debug","message":"disk usage warning threshold reached","service":"edge","request_id":"req-0072","duration_ms":125}
+{"timestamp":"2026-03-21T10:43:12Z","level":"info","message":"user login successful","service":"api","request_id":"req-0073","duration_ms":160}
+{"timestamp":"2026-03-21T10:43:48Z","level":"warn","message":"database query slow","service":"worker","request_id":"req-0074","duration_ms":195}
+{"timestamp":"2026-03-21T10:44:24Z","level":"error","message":"cache miss for key alpha","service":"billing","request_id":"req-0075","duration_ms":230}
+{"timestamp":"2026-03-21T10:45:00Z","level":"debug","message":"request timed out","service":"edge","request_id":"req-0076","duration_ms":265}
+{"timestamp":"2026-03-21T10:45:36Z","level":"info","message":"worker picked up job","service":"api","request_id":"req-0077","duration_ms":300}
+{"timestamp":"2026-03-21T10:46:12Z","level":"warn","message":"session refresh completed","service":"worker","request_id":"req-0078","duration_ms":90}
+{"timestamp":"2026-03-21T10:46:48Z","level":"error","message":"email delivery queued","service":"billing","request_id":"req-0079","duration_ms":125}
+{"timestamp":"2026-03-21T10:47:24Z","level":"debug","message":"disk usage warning threshold reached","service":"edge","request_id":"req-0080","duration_ms":160}
+time=2026-03-21T10:48:00Z level=info msg="replica lag detected" component=scheduler tenant=tenant-01 retry=0
+time=2026-03-21T10:48:48Z level=warn msg="cache warmed for tenant" component=gateway tenant=tenant-02 retry=1
+time=2026-03-21T10:49:36Z level=error msg="payment webhook failed" component=payments tenant=tenant-03 retry=2
+time=2026-03-21T10:50:24Z level=debug msg="background sweep finished" component=cache tenant=tenant-04 retry=0
+time=2026-03-21T10:51:12Z level=info msg="request retried after timeout" component=scheduler tenant=tenant-05 retry=1
+time=2026-03-21T10:52:00Z level=warn msg="connection pool saturated" component=gateway tenant=tenant-06 retry=2
+time=2026-03-21T10:52:48Z level=error msg="audit trail recorded" component=payments tenant=tenant-07 retry=0
+time=2026-03-21T10:53:36Z level=debug msg="feature flag refreshed" component=cache tenant=tenant-08 retry=1
+time=2026-03-21T10:54:24Z level=info msg="replica lag detected" component=scheduler tenant=tenant-09 retry=2
+time=2026-03-21T10:55:12Z level=warn msg="cache warmed for tenant" component=gateway tenant=tenant-01 retry=0
+time=2026-03-21T10:56:00Z level=error msg="payment webhook failed" component=payments tenant=tenant-02 retry=1
+time=2026-03-21T10:56:48Z level=debug msg="background sweep finished" component=cache tenant=tenant-03 retry=2
+time=2026-03-21T10:57:36Z level=info msg="request retried after timeout" component=scheduler tenant=tenant-04 retry=0
+time=2026-03-21T10:58:24Z level=warn msg="connection pool saturated" component=gateway tenant=tenant-05 retry=1
+time=2026-03-21T10:59:12Z level=error msg="audit trail recorded" component=payments tenant=tenant-06 retry=2
+time=2026-03-21T11:00:00Z level=debug msg="feature flag refreshed" component=cache tenant=tenant-07 retry=0
+time=2026-03-21T11:00:48Z level=info msg="replica lag detected" component=scheduler tenant=tenant-08 retry=1
+time=2026-03-21T11:01:36Z level=warn msg="cache warmed for tenant" component=gateway tenant=tenant-09 retry=2
+time=2026-03-21T11:02:24Z level=error msg="payment webhook failed" component=payments tenant=tenant-01 retry=0
+time=2026-03-21T11:03:12Z level=debug msg="background sweep finished" component=cache tenant=tenant-02 retry=1
+time=2026-03-21T11:04:00Z level=info msg="request retried after timeout" component=scheduler tenant=tenant-03 retry=2
+time=2026-03-21T11:04:48Z level=warn msg="connection pool saturated" component=gateway tenant=tenant-04 retry=0
+time=2026-03-21T11:05:36Z level=error msg="audit trail recorded" component=payments tenant=tenant-05 retry=1
+time=2026-03-21T11:06:24Z level=debug msg="feature flag refreshed" component=cache tenant=tenant-06 retry=2
+time=2026-03-21T11:07:12Z level=info msg="replica lag detected" component=scheduler tenant=tenant-07 retry=0
+time=2026-03-21T11:08:00Z level=warn msg="cache warmed for tenant" component=gateway tenant=tenant-08 retry=1
+time=2026-03-21T11:08:48Z level=error msg="payment webhook failed" component=payments tenant=tenant-09 retry=2
+time=2026-03-21T11:09:36Z level=debug msg="background sweep finished" component=cache tenant=tenant-01 retry=0
+time=2026-03-21T11:10:24Z level=info msg="request retried after timeout" component=scheduler tenant=tenant-02 retry=1
+time=2026-03-21T11:11:12Z level=warn msg="connection pool saturated" component=gateway tenant=tenant-03 retry=2
+time=2026-03-21T11:12:00Z level=error msg="audit trail recorded" component=payments tenant=tenant-04 retry=0
+time=2026-03-21T11:12:48Z level=debug msg="feature flag refreshed" component=cache tenant=tenant-05 retry=1
+time=2026-03-21T11:13:36Z level=info msg="replica lag detected" component=scheduler tenant=tenant-06 retry=2
+time=2026-03-21T11:14:24Z level=warn msg="cache warmed for tenant" component=gateway tenant=tenant-07 retry=0
+time=2026-03-21T11:15:12Z level=error msg="payment webhook failed" component=payments tenant=tenant-08 retry=1
+time=2026-03-21T11:16:00Z level=debug msg="background sweep finished" component=cache tenant=tenant-09 retry=2
+time=2026-03-21T11:16:48Z level=info msg="request retried after timeout" component=scheduler tenant=tenant-01 retry=0
+time=2026-03-21T11:17:36Z level=warn msg="connection pool saturated" component=gateway tenant=tenant-02 retry=1
+time=2026-03-21T11:18:24Z level=error msg="audit trail recorded" component=payments tenant=tenant-03 retry=2
+time=2026-03-21T11:19:12Z level=debug msg="feature flag refreshed" component=cache tenant=tenant-04 retry=0
+time=2026-03-21T11:20:00Z level=info msg="replica lag detected" component=scheduler tenant=tenant-05 retry=1
+time=2026-03-21T11:20:48Z level=warn msg="cache warmed for tenant" component=gateway tenant=tenant-06 retry=2
+time=2026-03-21T11:21:36Z level=error msg="payment webhook failed" component=payments tenant=tenant-07 retry=0
+time=2026-03-21T11:22:24Z level=debug msg="background sweep finished" component=cache tenant=tenant-08 retry=1
+time=2026-03-21T11:23:12Z level=info msg="request retried after timeout" component=scheduler tenant=tenant-09 retry=2
+time=2026-03-21T11:24:00Z level=warn msg="connection pool saturated" component=gateway tenant=tenant-01 retry=0
+time=2026-03-21T11:24:48Z level=error msg="audit trail recorded" component=payments tenant=tenant-02 retry=1
+time=2026-03-21T11:25:36Z level=debug msg="feature flag refreshed" component=cache tenant=tenant-03 retry=2
+time=2026-03-21T11:26:24Z level=info msg="replica lag detected" component=scheduler tenant=tenant-04 retry=0
+time=2026-03-21T11:27:12Z level=warn msg="cache warmed for tenant" component=gateway tenant=tenant-05 retry=1
+time=2026-03-21T11:28:00Z level=error msg="payment webhook failed" component=payments tenant=tenant-06 retry=2
+time=2026-03-21T11:28:48Z level=debug msg="background sweep finished" component=cache tenant=tenant-07 retry=0
+time=2026-03-21T11:29:36Z level=info msg="request retried after timeout" component=scheduler tenant=tenant-08 retry=1
+time=2026-03-21T11:30:24Z level=warn msg="connection pool saturated" component=gateway tenant=tenant-09 retry=2
+time=2026-03-21T11:31:12Z level=error msg="audit trail recorded" component=payments tenant=tenant-01 retry=0
+time=2026-03-21T11:32:00Z level=debug msg="feature flag refreshed" component=cache tenant=tenant-02 retry=1
+time=2026-03-21T11:32:48Z level=info msg="replica lag detected" component=scheduler tenant=tenant-03 retry=2
+time=2026-03-21T11:33:36Z level=warn msg="cache warmed for tenant" component=gateway tenant=tenant-04 retry=0
+time=2026-03-21T11:34:24Z level=error msg="payment webhook failed" component=payments tenant=tenant-05 retry=1
+time=2026-03-21T11:35:12Z level=debug msg="background sweep finished" component=cache tenant=tenant-06 retry=2
+2026-03-21 11:36:00 INFO request timed out after 3s
+2026-03-21 11:36:24 WARN database query slow on reporting replica
+2026-03-21 11:36:48 ERROR user login successful for dashboard
+2026-03-21 11:37:12 DEBUG cache miss for key order:42
+2026-03-21 11:37:36 TRACE scheduler heartbeat received
+2026-03-21 11:38:00 FATAL warning threshold reached for disk usage
+2026-03-21 11:38:24 INFO trace span exported to collector
+2026-03-21 11:38:48 WARN fatal shutdown requested by operator
+2026-03-21 11:39:12 ERROR request timed out after 3s
+2026-03-21 11:39:36 DEBUG database query slow on reporting replica
+2026-03-21 11:40:00 TRACE user login successful for dashboard
+2026-03-21 11:40:24 FATAL cache miss for key order:42
+2026-03-21 11:40:48 INFO scheduler heartbeat received
+2026-03-21 11:41:12 WARN warning threshold reached for disk usage
+2026-03-21 11:41:36 ERROR trace span exported to collector
+2026-03-21 11:42:00 DEBUG fatal shutdown requested by operator
+2026-03-21 11:42:24 TRACE request timed out after 3s
+2026-03-21 11:42:48 FATAL database query slow on reporting replica
+2026-03-21 11:43:12 INFO user login successful for dashboard
+2026-03-21 11:43:36 WARN cache miss for key order:42
+2026-03-21 11:44:00 ERROR scheduler heartbeat received
+2026-03-21 11:44:24 DEBUG warning threshold reached for disk usage
+2026-03-21 11:44:48 TRACE trace span exported to collector
+2026-03-21 11:45:12 FATAL fatal shutdown requested by operator
+2026-03-21 11:45:36 INFO request timed out after 3s
+2026-03-21 11:46:00 WARN database query slow on reporting replica
+2026-03-21 11:46:24 ERROR user login successful for dashboard
+2026-03-21 11:46:48 DEBUG cache miss for key order:42
+2026-03-21 11:47:12 TRACE scheduler heartbeat received
+2026-03-21 11:47:36 FATAL warning threshold reached for disk usage
+2026-03-21 11:48:00 INFO trace span exported to collector
+2026-03-21 11:48:24 WARN fatal shutdown requested by operator
+2026-03-21 11:48:48 ERROR request timed out after 3s
+2026-03-21 11:49:12 DEBUG database query slow on reporting replica
+2026-03-21 11:49:36 TRACE user login successful for dashboard
+2026-03-21 11:50:00 FATAL cache miss for key order:42
+2026-03-21 11:50:24 INFO scheduler heartbeat received
+2026-03-21 11:50:48 WARN warning threshold reached for disk usage
+2026-03-21 11:51:12 ERROR trace span exported to collector
+2026-03-21 11:51:36 DEBUG fatal shutdown requested by operator
+2026-03-21 11:52:00 TRACE request timed out after 3s
+2026-03-21 11:52:24 FATAL database query slow on reporting replica
+2026-03-21 11:52:48 INFO user login successful for dashboard
+2026-03-21 11:53:12 WARN cache miss for key order:42
+2026-03-21 11:53:36 ERROR scheduler heartbeat received
+2026-03-21 11:54:00 DEBUG warning threshold reached for disk usage
+2026-03-21 11:54:24 TRACE trace span exported to collector
+2026-03-21 11:54:48 FATAL fatal shutdown requested by operator
+2026-03-21 11:55:12 INFO request timed out after 3s
+2026-03-21 11:55:36 WARN database query slow on reporting replica
+2026-03-21 11:56:00 ERROR user login successful for dashboard
+2026-03-21 11:56:24 DEBUG cache miss for key order:42
+2026-03-21 11:56:48 TRACE scheduler heartbeat received
+2026-03-21 11:57:12 FATAL warning threshold reached for disk usage
+2026-03-21 11:57:36 INFO trace span exported to collector
+2026-03-21 11:58:00 WARN fatal shutdown requested by operator
+2026-03-21 11:58:24 ERROR request timed out after 3s
+2026-03-21 11:58:48 DEBUG database query slow on reporting replica
+2026-03-21 11:59:12 TRACE user login successful for dashboard
+2026-03-21 11:59:36 FATAL cache miss for key order:42

@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 
+import ErrorBanner from './components/ErrorBanner.jsx'
 import FilterBar from './components/FilterBar.jsx'
 import DetailPanel from './components/DetailPanel.jsx'
 import LogTable from './components/LogTable.jsx'
 import StatsBar from './components/StatsBar.jsx'
 import UploadZone from './components/UploadZone.jsx'
 import useLogs from './hooks/useLogs.js'
+import useUpload from './hooks/useUpload.js'
 import styles from './App.module.css'
 
 function App() {
@@ -13,7 +15,9 @@ function App() {
   const [activeLevel, setActiveLevel] = useState('')
   const [query, setQuery] = useState('')
   const [selectedEntry, setSelectedEntry] = useState(null)
-  const { entries, total, loading, error, setFilter } = useLogs()
+  const [bannerError, setBannerError] = useState(null)
+  const { clear, entries, total, loading, error, setFilter } = useLogs()
+  const { upload, uploading, error: uploadError, reset: resetUpload } = useUpload()
 
   function handleUploadComplete(nextStats) {
     setStats(nextStats)
@@ -23,11 +27,21 @@ function App() {
     setFilter({ q: '', level: '' })
   }
 
-  function handleClear() {
+  async function handleClear() {
+    try {
+      await clear()
+    } catch (err) {
+      setBannerError(err.message)
+      return
+    }
+
     setStats(null)
     setActiveLevel('')
     setQuery('')
     setSelectedEntry(null)
+    setBannerError(null)
+    resetUpload()
+    setFilter({ q: '', level: '' })
   }
 
   function handleFilter({ q, level }) {
@@ -40,8 +54,15 @@ function App() {
   useEffect(() => {
     if (error) {
       setSelectedEntry(null)
+      setBannerError(error)
     }
   }, [error])
+
+  useEffect(() => {
+    if (uploadError) {
+      setBannerError(uploadError)
+    }
+  }, [uploadError])
 
   function handleLevelFilter(level) {
     handleFilter({ q: query, level })
@@ -59,8 +80,18 @@ function App() {
       </section>
 
       <section className={styles.panel}>
+        <ErrorBanner message={bannerError} onDismiss={() => setBannerError(null)} />
         {stats === null ? (
-          <UploadZone onUploadComplete={handleUploadComplete} />
+          <UploadZone
+            error={uploadError}
+            onResetError={() => {
+              resetUpload()
+              setBannerError(null)
+            }}
+            onUpload={upload}
+            onUploadComplete={handleUploadComplete}
+            uploading={uploading}
+          />
         ) : (
           <div className={styles.workspace}>
             <div className={styles.primary}>
@@ -71,10 +102,9 @@ function App() {
                 stats={{ ...stats, total }}
               />
               <FilterBar activeLevel={activeLevel} onFilter={handleFilter} />
-              {error ? <p className={styles.error}>{error}</p> : null}
-              {loading ? <p className={styles.loading}>Loading logs...</p> : null}
               <LogTable
                 entries={entries}
+                loading={loading}
                 onSelect={setSelectedEntry}
                 query={query}
                 selectedId={selectedEntry?.id ?? ''}

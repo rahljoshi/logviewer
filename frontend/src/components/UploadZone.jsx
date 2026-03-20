@@ -1,15 +1,19 @@
 import { useRef, useState } from 'react'
 import { FileUp, LoaderCircle, UploadCloud } from 'lucide-react'
 
-import useUpload from '../hooks/useUpload.js'
 import { formatBytes } from '../utils/format.js'
 import styles from './UploadZone.module.css'
 
-function UploadZone({ onUploadComplete }) {
+function UploadZone({
+  error,
+  onResetError,
+  onUpload,
+  onUploadComplete,
+  uploading,
+}) {
   const inputRef = useRef(null)
   const [selectedFile, setSelectedFile] = useState(null)
   const [dragActive, setDragActive] = useState(false)
-  const { upload, uploading, error, reset } = useUpload()
 
   function chooseFile() {
     inputRef.current?.click()
@@ -17,7 +21,7 @@ function UploadZone({ onUploadComplete }) {
 
   function handleFileSelection(file) {
     setSelectedFile(file)
-    reset()
+    onResetError()
   }
 
   function handleInputChange(event) {
@@ -45,8 +49,10 @@ function UploadZone({ onUploadComplete }) {
       return
     }
 
-    const stats = await upload(selectedFile)
-    onUploadComplete(stats)
+    try {
+      const stats = await onUpload(selectedFile)
+      onUploadComplete(stats)
+    } catch {}
   }
 
   return (
