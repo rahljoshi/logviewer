@@ -8,8 +8,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/uuid"
-
 	"logviewer/backend/models"
 )
 
@@ -77,7 +75,6 @@ func (AutoParser) ParseFile(r io.Reader, filename string) ([]models.LogEntry, er
 
 // ParseFile reads all lines from r and returns parsed entries.
 func ParseFile(r io.Reader, filename string) ([]models.LogEntry, error) {
-	_ = filename
 
 	scanner := bufio.NewScanner(r)
 	scanner.Buffer(make([]byte, 10<<20), 10<<20)
@@ -98,19 +95,21 @@ func ParseFile(r io.Reader, filename string) ([]models.LogEntry, error) {
 		entry, err := selected.Parse(line)
 		if err != nil {
 			entry = models.LogEntry{
-				ID:        uuid.New().String(),
+				ID:        newID(),
 				Timestamp: time.Now(),
 				Level:     "UNKNOWN",
 				Message:   line,
 				Fields:    map[string]interface{}{},
 				Raw:       line,
+				Source:    filename,
 			}
 			entries = append(entries, entry)
 			continue
 		}
 
-		entry.ID = uuid.New().String()
+		entry.ID = newID()
 		entry.Raw = line
+		entry.Source = filename
 		if entry.Fields == nil {
 			entry.Fields = map[string]interface{}{}
 		}
