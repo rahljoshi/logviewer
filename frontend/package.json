@@ -1,0 +1,23 @@
+{
+  "name": "logviewer-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "node src/utils/format.test.js"
+  },
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.13.12",
+    "axios": "^1.8.4",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.511.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^6.3.5"
+  }
+}

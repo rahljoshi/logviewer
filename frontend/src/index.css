@@ -1,0 +1,39 @@
+:root {
+  --level-error: #e24b4a;
+  --level-warn: #ef9f27;
+  --level-info: #378add;
+  --level-debug: #888780;
+  --level-unknown: #b4b2a9;
+
+  --surface: #fffdf8;
+  --surface-2: #f4efe4;
+  --border: rgba(33, 28, 20, 0.12);
+  --text-primary: #1f1a14;
+  --text-muted: #6b655c;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  color: var(--text-primary);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
