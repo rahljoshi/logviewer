@@ -196,8 +196,8 @@ func TestParseFile(t *testing.T) {
 			if entry.ID == "" {
 				t.Fatal("expected entry id to be populated")
 			}
-			if entry.Source != "" {
-				t.Fatalf("expected source to remain empty, got %q", entry.Source)
+			if entry.Source != "app.log" {
+				t.Fatalf("expected source app.log, got %q", entry.Source)
 			}
 		}
 	})
@@ -235,6 +235,9 @@ func TestParseFile(t *testing.T) {
 		}
 		if entries[1].Raw != `msg="unterminated` {
 			t.Fatalf("expected raw line preserved, got %q", entries[1].Raw)
+		}
+		if entries[1].Source != "app.log" {
+			t.Fatalf("expected source app.log, got %q", entries[1].Source)
 		}
 	})
 }
